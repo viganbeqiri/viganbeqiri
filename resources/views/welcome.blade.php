@@ -118,7 +118,7 @@
                     {{-- Velos Contact Form --}}
                     <div id="velosForm" class="hidden p-6 lg:p-8 bg-[#161615] dark:bg-[#161615]" style="min-height: 500px;">
                         <div class="max-w-lg mx-auto text-[13px] leading-[20px]">
-                            <h2 class="mb-4 font-medium text-2xl text-[#1b1b18] dark:text-[#EDEDEC]">Velos - Register Your Interest</h2>
+                            <h2 class="mb-4 font-medium text-2xl text-[#706f6c] dark:text-[#A1A09A]">Velos - Register Your Interest</h2>
                             <p class="mb-6 text-[#706f6c] dark:text-[#A1A09A]">Please fill out the form below to express your interest in our properties.</p>
                             @if ($errors->any())
                                 <div class="text-red-500 bg-red-200/10 rounded-md p-3 mb-6">
@@ -132,7 +132,7 @@
                             <form action="/velos-create-lead" method="POST" class="mb-4 lg:mb-6">
                                 @csrf
                                 <div class="mb-4 lg:mb-6">
-                                    <label for="name" class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Full name</label>
+                                    <label for="name" class="block font-medium text-[#706f6c] dark:text-[#706f6c] mb-2">Full name</label>
                                     <input 
                                         id="name"
                                         type="text" 
@@ -144,7 +144,7 @@
                                 </div>
 
                                 <fieldset class="mb-4 lg:mb-6">
-                                    <legend class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Who are you?</legend>
+                                    <legend class="block font-medium text-[#706f6c] dark:text-[#EDEDEC] mb-2">Who are you?</legend>
                                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -155,7 +155,7 @@
                                                 required
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="user-buyer" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> Buyer</label>
+                                            <label for="user-buyer" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> Buyer</label>
                                         </div>
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -165,13 +165,13 @@
                                                 value="agent"
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="user-agent" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> Agent</label>
+                                            <label for="user-agent" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> Agent</label>
                                         </div>
                                     </div>
                                 </fieldset>
 
                                 <fieldset class="mb-4 lg:mb-6">
-                                    <legend class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Expected timeline of purchase</legend>
+                                    <legend class="block font-medium text-[#706f6c] dark:text-[#EDEDEC] mb-2">Expected timeline of purchase</legend>
                                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -182,7 +182,7 @@
                                                 required
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="timeline-1-3" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> 1-3 Months</label>
+                                            <label for="timeline-1-3" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> 1-3 Months</label>
                                         </div>
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -192,7 +192,7 @@
                                                 value="6_month"
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="timeline-6" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> 6 Months</label>
+                                            <label for="timeline-6" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> 6 Months</label>
                                         </div>
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -202,13 +202,13 @@
                                                 value="1_year"
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="timeline-1year" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> 1 Year</label>
+                                            <label for="timeline-1year" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> 1 Year</label>
                                         </div>
                                     </div>
                                 </fieldset>
 
                                 <fieldset class="mb-4 lg:mb-6">
-                                    <legend class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Property type</legend>
+                                    <legend class="block font-medium text-[#706f6c] dark:text-[#EDEDEC] mb-2">Property type</legend>
                                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -219,7 +219,7 @@
                                                 required
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="property-studio" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> Studio</label>
+                                            <label for="property-studio" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> Studio</label>
                                         </div>
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -229,7 +229,7 @@
                                                 value="1br"
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="property-1br" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> 1 BR Apartment</label>
+                                            <label for="property-1br" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> 1 BR Apartment</label>
                                         </div>
                                         <div class="flex items-center gap-x-4">
                                             <input 
@@ -239,18 +239,18 @@
                                                 value="2br"
                                                 class="h-4 w-4 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 text-[#f53003] focus:ring-2 focus:ring-[#f53003] focus:ring-offset-0"
                                             >
-                                            <label for="property-2br" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]"> 2 BR Apartment</label>
+                                            <label for="property-2br" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]"> 2 BR Apartment</label>
                                         </div>
                                     </div>
                                 </fieldset>
 
                                 <div class="mb-4 lg:mb-6">
-                                    <label for="phone" class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Phone number</label>
+                                    <label for="phone" class="block font-medium text-[#706f6c] dark:text-[#EDEDEC] mb-2">Phone number</label>
                                     <div class="flex gap-2">
                                         <select 
                                             id="country-code"
                                             name="country_code"
-                                            class="px-3 py-2 rounded-sm border border-[#e3e3e0] dark:border-[#3E3E3A] bg-white dark:bg-[#161615] text-[#1b1b18] dark:text-[#EDEDEC] focus:outline-none focus:ring-2 focus:ring-[#f53003] focus:border-transparent"
+                                            class="px-3 py-2 rounded-sm border border-[#e3e3e0] dark:border-[#3E3E3A] bg-white dark:bg-[#161615] text-[#706f6c] dark:text-[#EDEDEC] focus:outline-none focus:ring-2 focus:ring-[#f53003] focus:border-transparent"
                                         >
                                             <option value="+971" selected>🇦🇪 +971</option>
                                             <option value="+1">🇺🇸 +1</option>
@@ -349,7 +349,7 @@
                                 </div>
 
                                 <div class="mb-4 lg:mb-6">
-                                    <label for="email" class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Email address</label>
+                                    <label for="email" class="block font-medium text-[#706f6c] dark:text-[#EDEDEC] mb-2">Email address</label>
                                     <input 
                                         id="email"
                                         type="email" 
@@ -366,8 +366,8 @@
                                 </p>
 
                                 <div class="flex items-center justify-end gap-x-12">
-                                    <button type="button" onclick="showDefaultView()" class="font-medium text-[#1b1b18] dark:text-[#EDEDEC]">Cancel</button>
-                                    <button type="submit" style="margin-left: 20px;" class="rounded-sm bg-[#1b1b18] dark:bg-[#eeeeec] dark:text-[#1C1C1A] px-5 py-1.5 border border-black dark:border-[#eeeeec] text-white dark:hover:bg-white dark:hover:border-white hover:bg-black hover:border-black font-medium">Submit</button>
+                                    <button type="button" onclick="showDefaultView()" class="font-medium text-[#706f6c] dark:text-[#EDEDEC]">Cancel</button>
+                                    <button type="submit" style="margin-left: 20px;" class="rounded-sm bg-[#706f6c] dark:bg-[#eeeeec] dark:text-[#1C1C1A] px-5 py-1.5 border border-[#706f6c] dark:border-[#eeeeec] text-white dark:hover:bg-white dark:hover:border-white hover:bg-[#706f6c] hover:border-[#706f6c] font-medium">Submit</button>
                                 </div>
                             </form>
                         </div>
