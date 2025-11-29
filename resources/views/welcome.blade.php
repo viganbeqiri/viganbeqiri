@@ -120,8 +120,17 @@
                         <div class="max-w-lg mx-auto text-[13px] leading-[20px]">
                             <h2 class="mb-4 font-medium text-2xl text-[#1b1b18] dark:text-[#EDEDEC]">Velos - Register Your Interest</h2>
                             <p class="mb-6 text-[#706f6c] dark:text-[#A1A09A]">Please fill out the form below to express your interest in our properties.</p>
-                            
-                            <form action="https://develex.net/api/webhook/velos/create-lead" method="POST" class="mb-4 lg:mb-6">
+                            @if ($errors->any())
+                                <div class="text-red-500 bg-red-200/10 rounded-md p-3 mb-6">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            <form action="/velos-create-lead" method="POST" class="mb-4 lg:mb-6">
+                                @csrf
                                 <div class="mb-4 lg:mb-6">
                                     <label for="name" class="block font-medium text-[#1b1b18] dark:text-[#EDEDEC] mb-2">Full name</label>
                                     <input 
